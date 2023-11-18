@@ -77,8 +77,10 @@ img{
 .menu-list{
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+}
+
+.menu-item{
+    padding: 24px 0;
 }
 
 .menu-link{
@@ -136,13 +138,9 @@ img{
     letter-spacing: 0.02em;
     color: #FFF;
     text-align: center;
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto;
     padding-bottom: 48px;
-}
-
-.hero-btn{
-    /* margin: 0 635px 0 636px; */
 }
 
 .hero-button{
@@ -319,6 +317,9 @@ img{
 
 .logo-footer{
     color: #f4f4fd;
+}
+
+.logo-link-footer{
     display: inline-block;
     margin-bottom: 16px;
 }
