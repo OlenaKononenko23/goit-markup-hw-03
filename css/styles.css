@@ -7,7 +7,53 @@ body{
      color: #434455;
      background: #FFF;
 }
-/* font-family: 'Raleway', sans-serif; */
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section{
+    max-width: 100%;
+    padding: 120px 0;
+}
+
+        /* HEADER */
+.page-header-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.page-header{
+    padding-bottom: 96px;
+}
+
+.header-border{
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.page-nav{
+    display: flex;
+}
 
 .logo-link{
     font-family: 'Raleway', sans-serif;
@@ -18,10 +64,24 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     color: #4D5AE5;
+    
+}
+
+.logo-link-header{
+    margin-right: 76px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .logo{
     color:#2e2f42 ;
+}
+
+.menu-list{
+    display: flex;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-link{
@@ -42,6 +102,13 @@ body{
     font-style: normal;
 }
 
+.contacts-list{
+    display: flex;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .contacts-link{
     font-size: 16px;
     font-weight: 400;
@@ -56,6 +123,10 @@ body{
     color: #404BBF;
 }
 
+      /* /HEADER */
+
+      /* HERO */
+
 .page-hero{
     background: #2E2F42;
 }
@@ -67,6 +138,15 @@ body{
     letter-spacing: 0.02em;
     color: #FFF;
     text-align: center;
+    width: 496px;
+    margin: 0 auto;
+    padding-top: 188px;
+    padding-bottom: 48px;
+}
+
+.hero-btn{
+    margin: 0 635px 0 636px;
+    padding-bottom: 188px;
 }
 
 .hero-button{
@@ -77,11 +157,40 @@ body{
     color: #FFF;
     background: #4D5AE5;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .hero-button:hover,
 .hero-button:focus{
     background: #404BBF;
+}
+
+             /* /HERO */
+
+       /* ADVANTAGE */
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
+
+.advantage-list{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.advantage-item{
+    width: 264px;
 }
 
 .advantage-subtitle{
@@ -98,6 +207,9 @@ body{
     color: #434455;
 }
 
+        /* /ADVANTAGE */
+
+        /* PAGE */
 .page-team{
     background: #F4F4FD;
 }
@@ -110,10 +222,21 @@ body{
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
+    padding-bottom: 72px;
+}
+
+.team-list{
+    display: inline-flex;
+    gap: 24px;
 }
 
 .team-item{
     background: #FFFFFF;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-subtitle{
@@ -122,13 +245,17 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding: 32px 0 8px;
 }
 
 .team-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-bottom: 32px;
 }
+
+           /* PORTFOLIO */
 
 .subject-portfolio{
     font-size: 36px;
@@ -138,6 +265,19 @@ body{
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
+    padding-bottom: 72px;
+}
+
+.portfolio-list{
+    display: inline-flex;
+    gap:48px 24px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+   width: 360px;
+   flex-direction: column;
+   border: 1px solid #E7E9FC;
 }
 
 .portfolio-subtitle{
@@ -146,20 +286,34 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding: 32px 0 8px 16px;
 }
 
 .portfolio-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding:0 0 32px 16px;
 }
 
+          /* /PORTFOLIO */
+
+          /* FOOTER */
 .page-footer{
     background: #2E2F42;
 }
 
+.footer-container{
+    padding: 100px 0;
+}
+
 .logo-footer{
     color: #f4f4fd;
+}
+
+.logo-link-footer{
+    /* margin-bottom: 16px; */
+    /* padding-bottom: 16px; */
 }
 
 .footer-text{
@@ -167,4 +321,5 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    width: 264px;
 }
