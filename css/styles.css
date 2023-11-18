@@ -3,9 +3,9 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-     font-size: 16px;
-     color: #434455;
-     background: #FFF;
+    font-size: 16px;
+    color: #434455;
+    background: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -39,7 +39,6 @@ img{
         /* HEADER */
 .page-header-container{
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -275,9 +274,9 @@ img{
 }
 
 .portfolio-item{
-   width: 360px;
-   flex-direction: column;
-   border: 1px solid #E7E9FC;
+    width: 360px;
+    flex-direction: column;
+    border: 1px solid #E7E9FC;
 }
 
 .portfolio-subtitle{
@@ -309,11 +308,6 @@ img{
 
 .logo-footer{
     color: #f4f4fd;
-}
-
-.logo-link-footer{
-    /* margin-bottom: 16px; */
-    /* padding-bottom: 16px; */
 }
 
 .footer-text{
